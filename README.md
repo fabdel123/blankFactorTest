@@ -1,4 +1,4 @@
-# 🚀 BlankFactor Automation Framework
+# BlankFactor Automation Framework
 
 Automated testing framework built with **Java**, **Selenium WebDriver**, **Cucumber**, and **Maven**, designed to validate the functionality of the BlankFactor website through maintainable and scalable practices.
 
@@ -12,7 +12,7 @@ blankfactor-automation/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── pages/              # Page Object classes (HomePage, ContactPage, etc.)
-│   │   │   └── utils/              # Shared utilities (DriverFactory, ConfigReader)
+│   │   │   └── utils/              # Shared utilities (DriverFactory, ConfigReader, DataStore)
 │   └── test/
 │       ├── java/
 │       │   ├── hooks/              # Test lifecycle hooks (Before, After)
