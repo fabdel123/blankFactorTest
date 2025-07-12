@@ -12,7 +12,7 @@ blankfactor-automation/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── pages/              # Page Object classes (HomePage, ContactPage, etc.)
-│   │   │   └── utils/              # Shared utilities (DriverFactory, ConfigReader)
+│   │   │   └── utils/              # Shared utilities (DriverFactory, ConfigReader, DataStore)
 │   └── test/
 │       ├── java/
 │       │   ├── hooks/              # Test lifecycle hooks (Before, After)
