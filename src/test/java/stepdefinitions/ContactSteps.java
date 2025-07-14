@@ -23,6 +23,6 @@ public class ContactSteps {
         contactPage.isUrlCorrect(arg);
         Assert.assertTrue(contactPage.isUrlCorrect(arg));
     }
-    
+
 
 }
