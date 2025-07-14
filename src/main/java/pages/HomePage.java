@@ -1,6 +1,6 @@
 package pages;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +35,7 @@ public class HomePage extends BasePage {
     public void hoverMouseAndClickLinkText(String linkText) {
         //Verify that the field "Industries" menu is visible
         waitForElement(industriesLink);
-        Assertions.assertEquals("Industries", driver.findElement(industriesLink).getText());
+        Assert.assertEquals("Industries", driver.findElement(industriesLink).getText());
 
         // Hover over the element
         WebElement hoverable = driver.findElement(industriesLink);
