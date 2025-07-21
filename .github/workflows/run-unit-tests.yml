@@ -2,7 +2,7 @@ name: run unit tests of feature branches
 
 on: 
   push:
-    branch:
+    path:
       - 'src/test/resources/features/*'
 
 
