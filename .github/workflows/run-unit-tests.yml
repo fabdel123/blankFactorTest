@@ -6,7 +6,7 @@ on:
 
 
 jobs: 
-  nighly_build:
+  blankfactor_Tests:
     runs-on: ubuntu-latest
     steps:
         - name: Checkout
