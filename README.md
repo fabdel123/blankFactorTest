@@ -1,4 +1,4 @@
-[![run unit tests of feature branches](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml/badge.svg)](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml)
+[![run unit tests of feature BlankFactor](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml/badge.svg)](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml)
 
 # BlankFactor Automation Framework
 
