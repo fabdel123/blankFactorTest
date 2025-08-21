@@ -5,7 +5,6 @@ on:
     - cron: '0 23 * * *'
 
 
-
 jobs: 
   nighly_build:
     runs-on: ubuntu-latest
