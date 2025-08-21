@@ -1,7 +1,6 @@
 name: run unit tests of feature branches
 
 on: 
-  push:
   schedule:
     - cron: '0 23 * * *'
 
