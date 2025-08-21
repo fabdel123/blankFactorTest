@@ -1,3 +1,5 @@
+[![run unit tests of feature branches](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml/badge.svg)](https://github.com/fabdel123/blankFactorTest/actions/workflows/run-unit-tests.yml)
+
 # BlankFactor Automation Framework
 
 Automated testing framework built with **Java**, **Selenium WebDriver**, **Cucumber**, and **Maven**, designed to validate the functionality of the BlankFactor website through maintainable and scalable practices.
