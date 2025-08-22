@@ -16,7 +16,7 @@ jobs:
         - name: Run Build Maven
           run: mvn -DskipTests package -no-transfer-progress --file ./pom.xml
 
-        - uses: actions/upload-artifact@v3
+        - uses: actions/upload-artifact@v4
           with:
              name: blankfactor.war
              path: ./target/*blankfactor*.war
