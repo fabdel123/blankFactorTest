@@ -34,18 +34,17 @@ public class HomePage extends BasePage {
 
     public void hoverMouseAndClickLinkText(String linkText) {
         // Verify that the field 'Industries' menu is visible
-        waitForElement(industriesLink);
+        waitForPresenceElement(industriesLink);
         Assert.assertEquals("Industries", driver.findElement(industriesLink).getText());
 
         // Hover over the element
         WebElement hoverable = driver.findElement(industriesLink);
-
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            String mouseOverScript = "var evObj = document.createEvent('MouseEvents');" +
-                    "evObj.initMouseEvent('mouseover', true, true, window, 0, 0, 0, 0, 0," +
-                    "false, false, false, false, 0, null);" +
-                    "arguments[0].dispatchEvent(evObj);";
-            js.executeScript(mouseOverScript, hoverable);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        String mouseOverScript = "var evObj = document.createEvent('MouseEvents');" +
+                "evObj.initMouseEvent('mouseover', true, true, window, 0, 0, 0, 0, 0," +
+                "false, false, false, false, 0, null);" +
+                "arguments[0].dispatchEvent(evObj);";
+        js.executeScript(mouseOverScript, hoverable);
 
         // Obtain all available titles under the industry
         List<WebElement> industryTitles = driver.findElements(industriesTitleLink);
@@ -57,6 +56,5 @@ public class HomePage extends BasePage {
             }
         }
     }
-
 
 }
