@@ -15,16 +15,15 @@ public class DriverFactory {
 
             ChromeOptions options = new ChromeOptions();
 
-            // ⚡ Flags importantes para GitHub Actions (Linux runner)
+            // Flags GitHub Actions (Linux runner)
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--disable-gpu");
             options.addArguments("--remote-allow-origins=*");
-
-            // ⚡ Evitar conflicto con user-data-dir
+            options.addArguments("--window-size=1920,1080");
             options.addArguments("--user-data-dir=/tmp/unique-profile-" + System.currentTimeMillis());
 
-            // ⚡ Headless solo si estamos en CI/CD
+            // Headless solo si estamos en CI/CD
             if (System.getenv("GITHUB_ACTIONS") != null) {
                 options.addArguments("--headless=new");
             }
