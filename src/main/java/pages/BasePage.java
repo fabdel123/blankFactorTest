@@ -18,6 +18,11 @@ public class BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(argLocator));
     }
 
+    //Explicits waits presence of ElementLocated
+    protected void waitForPresenceElement(By argLocator) {
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(argLocator));
+    }
+
     //Explicits waits and click
     protected void waitForElementAndClick(By argLocator) {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(argLocator)).click();
