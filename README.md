@@ -63,11 +63,6 @@ All environment-specific values are stored in:
 src/test/resources/config.properties
 ```
 
-Example:
-```
-base.url=https://blankfactor.com
-browser=chrome
-```
 
 ---
 
@@ -105,5 +100,5 @@ browser=chrome
 
 ## 👤 Author
 
-**Fabián de la Rosa**  
+**Fabián De La Rosa**  
 QA Automation Engineer
