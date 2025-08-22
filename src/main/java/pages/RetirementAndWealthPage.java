@@ -86,7 +86,7 @@ public class RetirementAndWealthPage extends BasePage {
         for (WebElement title : industryTitles) {
             String actualText = title.getText().trim();
             if (actualText.equals(resultText)) {
-                title.click();
+                js.executeScript("arguments[0].click();",title);
                 break;
             }
         }
