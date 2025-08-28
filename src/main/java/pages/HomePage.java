@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
 
     public void hoverMouseAndClickLinkText(String linkText) {
         // Verify that the field 'Industries' menu is visible
-        waitForPresenceElement(industriesLink);
+        waitForElement(industriesLink);
         //Assert.assertEquals("Industries", driver.findElement(industriesLink).getText());
 
         // Hover over the element
